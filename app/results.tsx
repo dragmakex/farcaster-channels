@@ -28,7 +28,7 @@ export function Results() {
 
   useEffect(() => {
     async function fetchAsync() {
-      const newResults = await fetch(`/channels`);
+      const newResults = await fetch(`https://farcasterchannels.com/channels`);
       try {
         const newResultsJson = await newResults.json();
 
